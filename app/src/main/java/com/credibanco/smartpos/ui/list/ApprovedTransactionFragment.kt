@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import com.credibanco.smartpos.databinding.FragmentApprovedTransactionBinding
 
 class ApprovedTransactionFragment : Fragment() {
@@ -32,6 +33,8 @@ class ApprovedTransactionFragment : Fragment() {
         approvedTransactionViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+
         return root
     }
 

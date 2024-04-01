@@ -15,11 +15,24 @@
         android:id="@+id/nav_list_approved_transaction"
         android:name="com.credibanco.smartpos.ui.list.ApprovedTransactionFragment"
         android:label="@string/menu_list_approved_transaction"
-        tools:layout="@layout/fragment_approved_transaction" />
+        tools:layout="@layout/fragment_approved_transaction" >
+        <action
+            android:id="@+id/action_list_approved_transaction_to_transaction"
+            app:destination="@id/nav_transaction" >
+            <argument
+                android:name="idTransaction"
+                app:argType="integer"/>
+        </action>
+    </fragment>
 
     <fragment
         android:id="@+id/nav_transaction"
         android:name="com.credibanco.smartpos.ui.transaction.TransactionFragment"
         android:label="@string/menu_transaction_recibo"
-        tools:layout="@layout/fragment_transaction" />
+        tools:layout="@layout/fragment_transaction" >
+        <argument
+            android:name="idTransaction"
+            app:argType="integer" />
+    </fragment>
+
 </navigation>

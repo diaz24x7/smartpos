@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_auth_transaction" />
         <item
+            android:id="@+id/nav_annulment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_annulment" />
+        <item
             android:id="@+id/nav_list_approved_transaction"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_list_approved_transaction" />

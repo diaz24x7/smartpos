@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.credibanco.smartpos.databinding.FragmentSlideshowBinding
+import com.credibanco.smartpos.databinding.FragmentTransactionBinding
 
 class TransactionFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentTransactionBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,7 +25,7 @@ class TransactionFragment : Fragment() {
         val transactionViewModel =
             ViewModelProvider(this)[TransactionViewModel::class.java]
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentTransactionBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textSlideshow

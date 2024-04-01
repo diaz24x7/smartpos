@@ -1,6 +1,6 @@
-package com.credibanco.smartpos.data.model
+package com.credibanco.smartpos.model
 
-class AuthorizationRequestModel (
+class AuthorizationTransactionRequestModel (
     val id: String,
     val commerceCode: String,
     val terminalCode: String,

@@ -10,6 +10,7 @@
     <string name="menu_auth_transaction">Autorizar Tranzacción</string>
     <string name="menu_list_approved_transaction">Transacciones Aprovadas </string>
     <string name="menu_transaction_recibo">Transacciones por Recibo</string>
+    <string name="menu_annulment">Anular Transacciones</string>
 
     <string name="accept">Aceptar</string>
 </resources>

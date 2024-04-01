@@ -1,6 +1,6 @@
-package com.credibanco.smartpos.data.model
+package com.credibanco.smartpos.model
 
-class AuthorizationResponseModel (
+class AuthorizationTransactionResponseModel (
     val receiptId: String?,
     val rrn: String?,
     val statusCode: String,

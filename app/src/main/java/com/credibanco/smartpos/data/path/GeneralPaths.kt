@@ -1,4 +1,4 @@
-package com.credibanco.smartpos.data.service
+package com.credibanco.smartpos.data.path
 
 
 object GeneralPaths {

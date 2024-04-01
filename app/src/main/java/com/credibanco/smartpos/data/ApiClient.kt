@@ -1,17 +1,17 @@
-package com.credibanco.smartpos.data.service
+package com.credibanco.smartpos.data
 
 import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Context
 import android.util.Log
-import com.credibanco.smartpos.R
+import com.credibanco.smartpos.data.path.GeneralPaths
+import com.credibanco.smartpos.data.service.GeneralService
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
-
 
 class ApiClient {
     private lateinit var generalService: GeneralService
@@ -43,7 +43,7 @@ class ApiClient {
 
     fun enqueueOnResponse(funName: String = "", code: Int, message: String = "", body: String = "", progress:ProgressDialog, context: Context, activity: Activity?): Boolean {
         progress.dismiss()
-        Log.e("enqueueOnResponse", "$funName \n $message \n $body")
+        Log.e("enqueueOnResponse " + code, "$funName \n $message \n $body")
 
         return when (code) {
             in 200..300 -> true
