@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_auth_transaction">
+
+    <fragment
+        android:id="@+id/nav_auth_transaction"
+        android:name="com.credibanco.smartpos.ui.auth.AuthTransactionFragment"
+        android:label="@string/menu_auth_transaction"
+        tools:layout="@layout/fragment_auth_transaction" />
+
+    <fragment
+        android:id="@+id/nav_list_approved_transaction"
+        android:name="com.credibanco.smartpos.ui.list.ApprovedTransactionFragment"
+        android:label="@string/menu_list_approved_transaction"
+        tools:layout="@layout/fragment_approved_transaction" />
+
+    <fragment
+        android:id="@+id/nav_transaction"
+        android:name="com.credibanco.smartpos.ui.transaction.TransactionFragment"
+        android:label="@string/menu_transaction_recibo"
+        tools:layout="@layout/fragment_transaction" />
+</navigation>
