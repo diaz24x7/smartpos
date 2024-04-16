@@ -43,7 +43,7 @@ class ApiClient {
 
     fun enqueueOnResponse(funName: String = "", code: Int, message: String = "", body: String = "", progress:ProgressDialog, context: Context, activity: Activity?): Boolean {
         progress.dismiss()
-        Log.e("enqueueOnResponse " + code, "$funName \n $message \n $body")
+        Log.e("enqueueOnResponse $code", "$funName \n $message \n $body")
 
         return when (code) {
             in 200..300 -> true

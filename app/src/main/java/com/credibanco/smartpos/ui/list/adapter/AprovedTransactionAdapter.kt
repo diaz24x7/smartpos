@@ -1,17 +1,13 @@
 package com.credibanco.smartpos.ui.list.adapter
 
 import android.content.Context
-import android.text.Layout.Directions
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.credibanco.smartpos.R
 import com.credibanco.smartpos.model.TransactionModel
-import com.credibanco.smartpos.ui.list.ApprovedTransactionFragment
 
 class AprovedTransactionAdapter (
     var context: Context,
@@ -73,8 +69,8 @@ class AprovedTransactionAdapter (
         holder.textStatusDescription.text = arrayTransactionModel[position].statusDescription
 
         holder.itemView.setOnClickListener {
-            
-            /*val action = ApprovedTransactionFragment.actionListApprovedTransactionToTransaction(
+
+            /*val action = ApprovedTransactionFragmentDirections.actionListApprovedTransactionToTransaction(
                 arrayTransactionModel[position].id
             )
             view.findNavController().navigate(action)*/

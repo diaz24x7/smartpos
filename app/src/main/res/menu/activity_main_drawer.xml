@@ -16,9 +16,5 @@
             android:id="@+id/nav_list_approved_transaction"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_list_approved_transaction" />
-        <item
-            android:id="@+id/nav_transaction"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_transaction_recibo" />
     </group>
 </menu>
